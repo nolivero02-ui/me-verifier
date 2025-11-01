@@ -1,0 +1,17 @@
+﻿# Python / venv
+__pycache__/
+*.pyc
+.venv/
+
+# Config sensible
+.env
+
+# Datos personales (no publiques tus fotos)
+data/me/
+data/not_me/
+data/cropped/
+
+# Generados
+reports/*.png
+
+# (Deja models/ incluido para subir model.joblib)
