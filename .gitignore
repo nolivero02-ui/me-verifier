@@ -1,17 +1,28 @@
-﻿# Python / venv
+﻿@'
+# Entorno / caché
+.venv/
 __pycache__/
 *.pyc
-.venv/
+*.pyo
 
-# Config sensible
-.env
-
-# Datos personales (no publiques tus fotos)
+# Datos crudos o intermedios
+data/_skdata/
+data/cropped/
 data/me/
 data/not_me/
-data/cropped/
 
-# Generados
-reports/*.png
+# Permite eval si quieres incluir ejemplos pequeños
+# (quita el comentario si NO quieres subir eval)
+# data/eval/
 
-# (Deja models/ incluido para subir model.joblib)
+# Archivos locales
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Reportes binarios (dejamos el md y json)
+# (si generas imágenes en reports/, ignóralas)
+# reports/*.png
+# reports/*.pdf
+'@ | Set-Content -Encoding utf8 .gitignore
